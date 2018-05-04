@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C4B606B209CA55E0025C56F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B606A209CA55E0025C56F /* AppDelegate.m */; };
+		2C4B606E209CA55E0025C56F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B606D209CA55E0025C56F /* ViewController.m */; };
+		2C4B6071209CA55E0025C56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4B606F209CA55E0025C56F /* Main.storyboard */; };
+		2C4B6073209CA5610025C56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4B6072209CA5610025C56F /* Assets.xcassets */; };
+		2C4B6076209CA5610025C56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4B6074209CA5610025C56F /* LaunchScreen.storyboard */; };
+		2C4B6079209CA5610025C56F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B6078209CA5610025C56F /* main.m */; };
+		2C4B6083209CA5610025C56F /* ZCMultiSelectControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B6082209CA5610025C56F /* ZCMultiSelectControllerTests.m */; };
+		2C4B608E209CA5610025C56F /* ZCMultiSelectControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B608D209CA5610025C56F /* ZCMultiSelectControllerUITests.m */; };
+		2C4B60A2209CA5890025C56F /* ZCMultiSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B609C209CA5890025C56F /* ZCMultiSelectController.m */; };
+		2C4B60A3209CA5890025C56F /* ZCMultiSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B609F209CA5890025C56F /* ZCMultiSelectButton.m */; };
+		2C4B60A4209CA5890025C56F /* ZCTopSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B60A1209CA5890025C56F /* ZCTopSelectView.m */; };
+		2C4B60A7209CA7ED0025C56F /* UIView+UIView_ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B60A5209CA7EC0025C56F /* UIView+UIView_ZCExtension.m */; };
+		2CF8346F209CB29D00A82423 /* OneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8346E209CB29D00A82423 /* OneTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C4B607F209CA5610025C56F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4B605E209CA55E0025C56F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4B6065209CA55E0025C56F;
+			remoteInfo = ZCMultiSelectController;
+		};
+		2C4B608A209CA5610025C56F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4B605E209CA55E0025C56F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4B6065209CA55E0025C56F;
+			remoteInfo = ZCMultiSelectController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C4B6066209CA55E0025C56F /* ZCMultiSelectController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCMultiSelectController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4B6069209CA55E0025C56F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C4B606A209CA55E0025C56F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C4B606C209CA55E0025C56F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C4B606D209CA55E0025C56F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C4B6070209CA55E0025C56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C4B6072209CA5610025C56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C4B6075209CA5610025C56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C4B6077209CA5610025C56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4B6078209CA5610025C56F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C4B607E209CA5610025C56F /* ZCMultiSelectControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCMultiSelectControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4B6082209CA5610025C56F /* ZCMultiSelectControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCMultiSelectControllerTests.m; sourceTree = "<group>"; };
+		2C4B6084209CA5610025C56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4B6089209CA5610025C56F /* ZCMultiSelectControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCMultiSelectControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4B608D209CA5610025C56F /* ZCMultiSelectControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCMultiSelectControllerUITests.m; sourceTree = "<group>"; };
+		2C4B608F209CA5610025C56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4B609C209CA5890025C56F /* ZCMultiSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMultiSelectController.m; sourceTree = "<group>"; };
+		2C4B609D209CA5890025C56F /* ZCMultiSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMultiSelectButton.h; sourceTree = "<group>"; };
+		2C4B609E209CA5890025C56F /* ZCTopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTopSelectView.h; sourceTree = "<group>"; };
+		2C4B609F209CA5890025C56F /* ZCMultiSelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMultiSelectButton.m; sourceTree = "<group>"; };
+		2C4B60A0209CA5890025C56F /* ZCMultiSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMultiSelectController.h; sourceTree = "<group>"; };
+		2C4B60A1209CA5890025C56F /* ZCTopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTopSelectView.m; sourceTree = "<group>"; };
+		2C4B60A5209CA7EC0025C56F /* UIView+UIView_ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIView_ZCExtension.m"; sourceTree = "<group>"; };
+		2C4B60A6209CA7EC0025C56F /* UIView+UIView_ZCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIView_ZCExtension.h"; sourceTree = "<group>"; };
+		2CF8346D209CB29D00A82423 /* OneTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneTableViewController.h; sourceTree = "<group>"; };
+		2CF8346E209CB29D00A82423 /* OneTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C4B6063209CA55E0025C56F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4B607B209CA5610025C56F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4B6086209CA5610025C56F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4B605D209CA55E0025C56F = {
+			isa = PBXGroup;
+			children = (
+				2C4B6068209CA55E0025C56F /* ZCMultiSelectController */,
+				2C4B6081209CA5610025C56F /* ZCMultiSelectControllerTests */,
+				2C4B608C209CA5610025C56F /* ZCMultiSelectControllerUITests */,
+				2C4B6067209CA55E0025C56F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C4B6067209CA55E0025C56F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C4B6066209CA55E0025C56F /* ZCMultiSelectController.app */,
+				2C4B607E209CA5610025C56F /* ZCMultiSelectControllerTests.xctest */,
+				2C4B6089209CA5610025C56F /* ZCMultiSelectControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C4B6068209CA55E0025C56F /* ZCMultiSelectController */ = {
+			isa = PBXGroup;
+			children = (
+				2C4B609B209CA5880025C56F /* ZCMultiSelectController */,
+				2C4B6069209CA55E0025C56F /* AppDelegate.h */,
+				2C4B606A209CA55E0025C56F /* AppDelegate.m */,
+				2C4B606C209CA55E0025C56F /* ViewController.h */,
+				2C4B606D209CA55E0025C56F /* ViewController.m */,
+				2CF8346D209CB29D00A82423 /* OneTableViewController.h */,
+				2CF8346E209CB29D00A82423 /* OneTableViewController.m */,
+				2C4B606F209CA55E0025C56F /* Main.storyboard */,
+				2C4B6072209CA5610025C56F /* Assets.xcassets */,
+				2C4B6074209CA5610025C56F /* LaunchScreen.storyboard */,
+				2C4B6077209CA5610025C56F /* Info.plist */,
+				2C4B6078209CA5610025C56F /* main.m */,
+			);
+			path = ZCMultiSelectController;
+			sourceTree = "<group>";
+		};
+		2C4B6081209CA5610025C56F /* ZCMultiSelectControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4B6082209CA5610025C56F /* ZCMultiSelectControllerTests.m */,
+				2C4B6084209CA5610025C56F /* Info.plist */,
+			);
+			path = ZCMultiSelectControllerTests;
+			sourceTree = "<group>";
+		};
+		2C4B608C209CA5610025C56F /* ZCMultiSelectControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4B608D209CA5610025C56F /* ZCMultiSelectControllerUITests.m */,
+				2C4B608F209CA5610025C56F /* Info.plist */,
+			);
+			path = ZCMultiSelectControllerUITests;
+			sourceTree = "<group>";
+		};
+		2C4B609B209CA5880025C56F /* ZCMultiSelectController */ = {
+			isa = PBXGroup;
+			children = (
+				2C4B60A0209CA5890025C56F /* ZCMultiSelectController.h */,
+				2C4B609C209CA5890025C56F /* ZCMultiSelectController.m */,
+				2C4B609E209CA5890025C56F /* ZCTopSelectView.h */,
+				2C4B60A1209CA5890025C56F /* ZCTopSelectView.m */,
+				2C4B609D209CA5890025C56F /* ZCMultiSelectButton.h */,
+				2C4B609F209CA5890025C56F /* ZCMultiSelectButton.m */,
+				2C4B60A6209CA7EC0025C56F /* UIView+UIView_ZCExtension.h */,
+				2C4B60A5209CA7EC0025C56F /* UIView+UIView_ZCExtension.m */,
+			);
+			path = ZCMultiSelectController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C4B6065209CA55E0025C56F /* ZCMultiSelectController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4B6092209CA5610025C56F /* Build configuration list for PBXNativeTarget "ZCMultiSelectController" */;
+			buildPhases = (
+				2C4B6062209CA55E0025C56F /* Sources */,
+				2C4B6063209CA55E0025C56F /* Frameworks */,
+				2C4B6064209CA55E0025C56F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZCMultiSelectController;
+			productName = ZCMultiSelectController;
+			productReference = 2C4B6066209CA55E0025C56F /* ZCMultiSelectController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C4B607D209CA5610025C56F /* ZCMultiSelectControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4B6095209CA5610025C56F /* Build configuration list for PBXNativeTarget "ZCMultiSelectControllerTests" */;
+			buildPhases = (
+				2C4B607A209CA5610025C56F /* Sources */,
+				2C4B607B209CA5610025C56F /* Frameworks */,
+				2C4B607C209CA5610025C56F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4B6080209CA5610025C56F /* PBXTargetDependency */,
+			);
+			name = ZCMultiSelectControllerTests;
+			productName = ZCMultiSelectControllerTests;
+			productReference = 2C4B607E209CA5610025C56F /* ZCMultiSelectControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C4B6088209CA5610025C56F /* ZCMultiSelectControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4B6098209CA5610025C56F /* Build configuration list for PBXNativeTarget "ZCMultiSelectControllerUITests" */;
+			buildPhases = (
+				2C4B6085209CA5610025C56F /* Sources */,
+				2C4B6086209CA5610025C56F /* Frameworks */,
+				2C4B6087209CA5610025C56F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4B608B209CA5610025C56F /* PBXTargetDependency */,
+			);
+			name = ZCMultiSelectControllerUITests;
+			productName = ZCMultiSelectControllerUITests;
+			productReference = 2C4B6089209CA5610025C56F /* ZCMultiSelectControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C4B605E209CA55E0025C56F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = hzc;
+				TargetAttributes = {
+					2C4B6065209CA55E0025C56F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					2C4B607D209CA5610025C56F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2C4B6065209CA55E0025C56F;
+					};
+					2C4B6088209CA5610025C56F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2C4B6065209CA55E0025C56F;
+					};
+				};
+			};
+			buildConfigurationList = 2C4B6061209CA55E0025C56F /* Build configuration list for PBXProject "ZCMultiSelectController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C4B605D209CA55E0025C56F;
+			productRefGroup = 2C4B6067209CA55E0025C56F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C4B6065209CA55E0025C56F /* ZCMultiSelectController */,
+				2C4B607D209CA5610025C56F /* ZCMultiSelectControllerTests */,
+				2C4B6088209CA5610025C56F /* ZCMultiSelectControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C4B6064209CA55E0025C56F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4B6076209CA5610025C56F /* LaunchScreen.storyboard in Resources */,
+				2C4B6073209CA5610025C56F /* Assets.xcassets in Resources */,
+				2C4B6071209CA55E0025C56F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4B607C209CA5610025C56F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4B6087209CA5610025C56F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C4B6062209CA55E0025C56F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4B60A2209CA5890025C56F /* ZCMultiSelectController.m in Sources */,
+				2C4B606E209CA55E0025C56F /* ViewController.m in Sources */,
+				2C4B6079209CA5610025C56F /* main.m in Sources */,
+				2C4B60A3209CA5890025C56F /* ZCMultiSelectButton.m in Sources */,
+				2CF8346F209CB29D00A82423 /* OneTableViewController.m in Sources */,
+				2C4B60A7209CA7ED0025C56F /* UIView+UIView_ZCExtension.m in Sources */,
+				2C4B606B209CA55E0025C56F /* AppDelegate.m in Sources */,
+				2C4B60A4209CA5890025C56F /* ZCTopSelectView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4B607A209CA5610025C56F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4B6083209CA5610025C56F /* ZCMultiSelectControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4B6085209CA5610025C56F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4B608E209CA5610025C56F /* ZCMultiSelectControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C4B6080209CA5610025C56F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4B6065209CA55E0025C56F /* ZCMultiSelectController */;
+			targetProxy = 2C4B607F209CA5610025C56F /* PBXContainerItemProxy */;
+		};
+		2C4B608B209CA5610025C56F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4B6065209CA55E0025C56F /* ZCMultiSelectController */;
+			targetProxy = 2C4B608A209CA5610025C56F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C4B606F209CA55E0025C56F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4B6070209CA55E0025C56F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C4B6074209CA5610025C56F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4B6075209CA5610025C56F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C4B6090209CA5610025C56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C4B6091209CA5610025C56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C4B6093209CA5610025C56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCMultiSelectController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCMultiSelectController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C4B6094209CA5610025C56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCMultiSelectController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCMultiSelectController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C4B6096209CA5610025C56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCMultiSelectControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCMultiSelectControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCMultiSelectController.app/ZCMultiSelectController";
+			};
+			name = Debug;
+		};
+		2C4B6097209CA5610025C56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCMultiSelectControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCMultiSelectControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCMultiSelectController.app/ZCMultiSelectController";
+			};
+			name = Release;
+		};
+		2C4B6099209CA5610025C56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCMultiSelectControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCMultiSelectControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZCMultiSelectController;
+			};
+			name = Debug;
+		};
+		2C4B609A209CA5610025C56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCMultiSelectControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCMultiSelectControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZCMultiSelectController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C4B6061209CA55E0025C56F /* Build configuration list for PBXProject "ZCMultiSelectController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4B6090209CA5610025C56F /* Debug */,
+				2C4B6091209CA5610025C56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4B6092209CA5610025C56F /* Build configuration list for PBXNativeTarget "ZCMultiSelectController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4B6093209CA5610025C56F /* Debug */,
+				2C4B6094209CA5610025C56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4B6095209CA5610025C56F /* Build configuration list for PBXNativeTarget "ZCMultiSelectControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4B6096209CA5610025C56F /* Debug */,
+				2C4B6097209CA5610025C56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4B6098209CA5610025C56F /* Build configuration list for PBXNativeTarget "ZCMultiSelectControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4B6099209CA5610025C56F /* Debug */,
+				2C4B609A209CA5610025C56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C4B605E209CA55E0025C56F /* Project object */;
+}
