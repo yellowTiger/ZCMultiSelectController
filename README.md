@@ -12,8 +12,11 @@ How To Use:如何使用
     //the ChildController Array 子控制器的数组
     
     NSMutableArray* controllerArr = [NSMutableArray array];
+    
     for (int i=0; i<5; i++) {
+    
         [controllerArr addObject:[[OneTableViewController alloc]init]];
+        
     }
     
     //This is done;一行代码搞定
