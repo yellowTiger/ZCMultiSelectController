@@ -20,6 +20,7 @@ How To Use:如何使用
     }
     
     //This is done;一行代码搞定
+    
     [self setUp:titleArr controllerArr:controllerArr];
     
     //if you want to change buttons color 改按钮颜色在这里改
