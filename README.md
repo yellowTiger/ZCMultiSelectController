@@ -1,7 +1,7 @@
 # ZCMuliSelectController
 How To Use:如何使用
 
-#import "ZCMultiSelectController.h" and inherit ZCMultiSelectController
+#import "ZCMultiSelectController.h" and inherit(继承) ZCMultiSelectController
 
     //title Array Of Buttons  按钮标题的数组
     
