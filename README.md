@@ -4,9 +4,11 @@ How To Use:如何使用
 #import "ZCMultiSelectController.h" and inherit ZCMultiSelectController
 
     //title Array Of Buttons  按钮标题的数组
+    
     NSArray *titleArr=@[@"First",@"Second",@"Three",@"Four",@"Five"];
     
     //the ChildController Array 子控制器的数组
+    
     NSMutableArray* controllerArr = [NSMutableArray array];
     for (int i=0; i<5; i++) {
         [controllerArr addObject:[[OneTableViewController alloc]init]];
