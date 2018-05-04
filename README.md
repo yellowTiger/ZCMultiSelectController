@@ -1,4 +1,6 @@
-# ZCMuliSelectController
+# ZCMuliSelectController 
+![image](https://github.com/yellowTiger/ZCMuliSelectController/blob/master/demoPic.png) 
+![image](https://github.com/yellowTiger/ZCMuliSelectController/blob/master/333.gif)  
 How To Use:如何使用
 
 #import "ZCMultiSelectController.h" and inherit(继承) ZCMultiSelectController
