@@ -1,4 +1,4 @@
-# ZCMuliSelectController 
+# ZCMultiSelectController 
 ![image](https://github.com/yellowTiger/ZCMuliSelectController/blob/master/demoPic.png) 
 ![image](https://github.com/yellowTiger/ZCMuliSelectController/blob/master/333.gif)  
 
