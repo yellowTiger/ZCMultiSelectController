@@ -25,23 +25,28 @@ CGFloat topViewHeight=45;
     [super viewDidLoad];
 }
 
--(void)setUp:(NSArray<NSString*>*)titleArr controllerArr:(NSArray<UIViewController*>*)controllerArr{
-        CGFloat SCREENWIDTW = [[UIScreen mainScreen] bounds].size.width;
-        CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.height;
+-(void)setUp:(NSArray<NSString*>*)titleArr controllerArr:(NSArray<UIViewController*>*)controllerArr buttonWidth:(CGFloat)btnWidth{
+        CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
+        CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
         CGFloat Height_NavBar;
         if (SCREENWIDTH==812.0f) {
             Height_NavBar = 88;
         }else{
             Height_NavBar = 64;
         }
-        self.topView=[[ZCTopSelectView alloc]initWithFrame:CGRectMake(0, Height_NavBar, SCREENWIDTW, topViewHeight)];
+        __weak typeof(self) wself = self;
+        self.topView=[[ZCTopSelectView alloc]initWithFrame:CGRectMake(0, Height_NavBar, SCREENWIDTH, topViewHeight)];
         __weak typeof(self) weakSelf = self;
         self.topView.clickBlock = ^(NSInteger index) {
             CGPoint offset = weakSelf.scrollView.contentOffset;
             offset.x = index * self.scrollView.xmg_width;
             [weakSelf.scrollView setContentOffset:offset animated:YES];
+            // 子控制器的索引
+            NSInteger cIndex = self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
+            // 取出对应位置的子控制器
+            wself.currentController= wself.childViewControllers[cIndex];
         };
-        [self.topView setButtonsWithArray:titleArr selectedIndex:0 andButtonWidth:SCREENWIDTW/3.5];
+        [self.topView setButtonsWithArray:titleArr selectedIndex:0 andButtonWidth:btnWidth];
         [self.view addSubview:self.topView];
     
         for (NSInteger i=0; i<controllerArr.count; i++) {
@@ -70,9 +75,9 @@ CGFloat topViewHeight=45;
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
     
-    CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.height;
+    CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
     CGFloat Height_NavBar;
-    if (SCREENWIDTH==812.0f) {
+    if (SCREENHEIGHT>=812.0f) {
         Height_NavBar = 88;
     }else{
         Height_NavBar = 64;
@@ -103,6 +108,7 @@ CGFloat topViewHeight=45;
     
     // 取出对应位置的子控制器
     UIViewController *childVc = self.childViewControllers[index];
+    self.currentController=childVc;
     // 如果这个子控制器的view已经添加过了，那么直接返回
     if (childVc.isViewLoaded) return;
     

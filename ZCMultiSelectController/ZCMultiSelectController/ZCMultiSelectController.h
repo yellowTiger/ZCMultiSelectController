@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ZCMultiSelectController : UIViewController
-
--(void)setUp:(NSArray<NSString*>*)titleArr controllerArr:(NSArray<UIViewController*>*)controllerArr;
+@property(nonatomic,strong)UIViewController * currentController;
+-(void)setUp:(NSArray<NSString*>*)titleArr controllerArr:(NSArray<UIViewController*>*)controllerArr buttonWidth:(CGFloat)btnWidth;
 
 -(void)setTopViewColor:(UIColor*)color selectedColor:(UIColor*)selectColor;
 @end

@@ -25,7 +25,7 @@
         [controllerArr addObject:[[OneTableViewController alloc]init]];
     }
     
-    [self setUp:titleArr controllerArr:controllerArr];
+    [self setUp:titleArr controllerArr:controllerArr buttonWidth:100];
     //设置顶部按钮和下划线颜色
 //    [self setTopViewColor:[UIColor grayColor] selectedColor:[UIColor orangeColor]];
     
