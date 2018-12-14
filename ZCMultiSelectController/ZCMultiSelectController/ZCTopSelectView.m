@@ -90,9 +90,14 @@
         //        self.underline.xmg_width = titleButton.titleLabel.xmg_width + XMGCommonMargin;
         // 中心点
         self.bottomLine.xmg_centerX = btn.xmg_centerX;
-        CGFloat SCREENWIDTW = [[UIScreen mainScreen] bounds].size.width;
-        if (btn.frame.origin.x + btn.frame.size.width>SCREENWIDTW) {
-             [self setContentOffset:CGPointMake(btn.xmg_x -self.btnWidth, 0)];
+        CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
+        CGFloat btnX =btn.frame.origin.x;
+        if (btnX + btn.frame.size.width>SCREENWIDTH) {
+            if (2*btnX<self.contentSize.width) {
+                [self setContentOffset:CGPointMake(btnX -self.btnWidth, 0)];
+            }else{
+                [self setContentOffset:CGPointMake(self.contentSize.width-SCREENWIDTH, 0)];
+            }
         }else{
             [self setContentOffset:CGPointMake(0, 0)];
         }
@@ -113,10 +118,14 @@
 //        self.underline.xmg_width = titleButton.titleLabel.xmg_width + XMGCommonMargin;
         // 中心点
         self.bottomLine.xmg_centerX = self.btnArr[index].xmg_centerX;
-        CGFloat SCREENWIDTW = [[UIScreen mainScreen] bounds].size.width;
-       
-        if (self.btnWidth*(index+1)>SCREENWIDTW) {
-            [self setContentOffset:CGPointMake(self.btnArr[index].xmg_x-self.btnWidth, 0)];
+        CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
+        CGFloat btnX =index*self.btnWidth;
+        if (self.btnWidth*(index+1)>SCREENWIDTH) {
+            if (2*btnX<self.contentSize.width) {
+                [self setContentOffset:CGPointMake(btnX - self.btnWidth, 0)];
+            }else{
+                [self setContentOffset:CGPointMake(self.contentSize.width-SCREENWIDTH, 0)];
+            }
         }else{
             [self setContentOffset:CGPointMake(0, 0)];
         }

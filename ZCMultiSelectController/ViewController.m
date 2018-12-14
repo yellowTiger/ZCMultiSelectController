@@ -17,11 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //button 的title
-    NSArray *titleArr=@[@"First",@"Second",@"Three",@"Four",@"Five"];
+    NSArray *titleArr=@[@"First",@"Second",@"Three",@"Four",@"Five",@"six",@"seven",@"eight",@"nine"];
     
     //对应的子控制器
     NSMutableArray* controllerArr = [NSMutableArray array];
-    for (int i=0; i<5; i++) {
+    for (int i=0; i<9; i++) {
         [controllerArr addObject:[[OneTableViewController alloc]init]];
     }
     
