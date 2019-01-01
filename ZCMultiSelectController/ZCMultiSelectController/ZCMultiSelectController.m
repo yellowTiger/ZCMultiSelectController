@@ -26,35 +26,36 @@ CGFloat topViewHeight=45;
 }
 
 -(void)setUp:(NSArray<NSString*>*)titleArr controllerArr:(NSArray<UIViewController*>*)controllerArr buttonWidth:(CGFloat)btnWidth{
-        CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
-        CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
-        CGFloat Height_NavBar;
-        if (SCREENWIDTH==812.0f) {
-            Height_NavBar = 88;
-        }else{
-            Height_NavBar = 64;
-        }
-        __weak typeof(self) wself = self;
-        self.topView=[[ZCTopSelectView alloc]initWithFrame:CGRectMake(0, Height_NavBar, SCREENWIDTH, topViewHeight)];
-        __weak typeof(self) weakSelf = self;
-        self.topView.clickBlock = ^(NSInteger index) {
-            CGPoint offset = weakSelf.scrollView.contentOffset;
-            offset.x = index * self.scrollView.xmg_width;
-            [weakSelf.scrollView setContentOffset:offset animated:YES];
-            // 子控制器的索引
-            NSInteger cIndex = self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
-            // 取出对应位置的子控制器
-            wself.currentController= wself.childViewControllers[cIndex];
-        };
-        [self.topView setButtonsWithArray:titleArr selectedIndex:0 andButtonWidth:btnWidth];
-        [self.view addSubview:self.topView];
+    CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
+    CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
     
-        for (NSInteger i=0; i<controllerArr.count; i++) {
-            [self addChildViewController:controllerArr[i]];
-        }
-        [self setupScrollView:controllerArr];
-        // 默认添加一个子控制器的view到scrollView中
-        [self addChildVcViewIntoScrollView];
+    CGFloat Height_NavBar;
+    if (self.navigationController.isNavigationBarHidden){
+        Height_NavBar=[[UIApplication sharedApplication] statusBarFrame].size.height;
+    }else{
+        Height_NavBar = [[UIApplication sharedApplication] statusBarFrame].size.height+44;
+    }
+    __weak typeof(self) wself = self;
+    self.topView=[[ZCTopSelectView alloc]initWithFrame:CGRectMake(0, Height_NavBar, SCREENWIDTH, topViewHeight)];
+    __weak typeof(self) weakSelf = self;
+    self.topView.clickBlock = ^(NSInteger index) {
+        CGPoint offset = weakSelf.scrollView.contentOffset;
+        offset.x = index * self.scrollView.xmg_width;
+        [weakSelf.scrollView setContentOffset:offset animated:YES];
+        // 子控制器的索引
+        NSInteger cIndex = self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
+        // 取出对应位置的子控制器
+        wself.currentController= wself.childViewControllers[cIndex];
+    };
+    [self.topView setButtonsWithArray:titleArr selectedIndex:0 andButtonWidth:btnWidth];
+    [self.view addSubview:self.topView];
+    
+    for (NSInteger i=0; i<controllerArr.count; i++) {
+        [self addChildViewController:controllerArr[i]];
+    }
+    [self setupScrollView:controllerArr];
+    // 默认添加一个子控制器的view到scrollView中
+    [self addChildVcViewIntoScrollView];
     
 }
 
@@ -70,17 +71,17 @@ CGFloat topViewHeight=45;
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-   
+    
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
     
     CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
     CGFloat Height_NavBar;
-    if (SCREENHEIGHT>=812.0f) {
-        Height_NavBar = 88;
+    if (self.navigationController.isNavigationBarHidden){
+        Height_NavBar=[[UIApplication sharedApplication] statusBarFrame].size.height;
     }else{
-        Height_NavBar = 64;
+        Height_NavBar = [[UIApplication sharedApplication] statusBarFrame].size.height+44;
     }
     
     scrollView.xmg_y=topViewHeight + Height_NavBar;
