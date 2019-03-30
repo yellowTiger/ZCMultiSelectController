@@ -84,7 +84,10 @@ CGFloat topViewHeight=45;
         Height_NavBar = [[UIApplication sharedApplication] statusBarFrame].size.height+44;
     }
     
-    scrollView.xmg_y=topViewHeight + Height_NavBar;
+    CGFloat topSpace  = topViewHeight + Height_NavBar;
+    scrollView.xmg_y= topSpace;
+    CGFloat bottomspace = self.tabBarController.tabBar.isHidden?0:49;
+    scrollView.xmg_height = self.view.xmg_height-(topSpace + bottomspace);
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.delegate = self;
