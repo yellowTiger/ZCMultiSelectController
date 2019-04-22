@@ -78,10 +78,15 @@
     
 }
 -(void)buttonClick:(ZCMultiSelectButton*)btn{
+    //如果已经选中就不再做动画
+    if (self.selectedBtn.selected&&btn==self.selectedBtn) {
+        self.clickBlock(btn.index);
+        return;
+    }
     self.selectedBtn.selected=NO;
     btn.selected=YES;
     self.selectedBtn=btn;
-    self.clickBlock(btn.index);
+    
     
     
     // 移动下划线
